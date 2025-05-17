@@ -14,19 +14,19 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh 'npm test || true' // or your test command
+                bat 'npm test || true' // or your test command
             }
         }
 
         stage('Build App') {
             steps {
-                sh 'npm run build'
+                bat 'npm run build'
             }
         }
 
