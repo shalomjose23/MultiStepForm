@@ -20,7 +20,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                bat 'npm test || true' // or your test command
+                bat 'npm test' // or your test command
             }
         }
 
